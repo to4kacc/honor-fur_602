@@ -171,5 +171,7 @@ fi
 # This is applied to the build .config by the workflow; record the intent here
 # so the requirement is not silently lost if the workflow is ever rewritten.
 echo "[diy] build config requirement: CONFIG_ALL_KMODS=y (publish full kmod set, keep image lean)"
+rm -rf build_dir/target-aarch64_cortex-a53_musl/linux-mediatek_filogic/rtl8188eu-*
 
 echo "[diy] HONOR FUR-602/603 device support ready."
+
